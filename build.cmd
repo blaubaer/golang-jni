@@ -16,7 +16,7 @@ rd  /q /s out 2>NUL
 mkdir out
 IF %ERRORLEVEL% NEQ 0 EXIT /b %ERRORLEVEL%
 
-javac -h . -d out Hello.java
+javac -d out Hello.java
 IF %ERRORLEVEL% NEQ 0 EXIT /b %ERRORLEVEL%
 
 go build -buildmode=c-shared -o out\hello.dll .
