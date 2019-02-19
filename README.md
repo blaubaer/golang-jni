@@ -10,7 +10,7 @@ Testing out calling Golang code from Java using JNI - at first on Windows.
 
 ## Issues
 
-After running everything currently I get messages like this:
+After running `build.cmd` currently I get messages like this (using Golang `go1.11.5 windows/amd64`):
 ```
 C:\development\github.com\blaubaer\golang-jni>build
 Exception in thread "main" java.lang.UnsatisfiedLinkError: C:\development\github.com\blaubaer\golang-jni\out\hello.dll: A dynamic link library (DLL) initialization routine failed
